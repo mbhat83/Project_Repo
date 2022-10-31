@@ -1,0 +1,50 @@
+   77      if [ -n "${_CE_CONDA:+x}" ] && [ -n "${WINDIR+x}" ]; then         PATH="$(\dirname "$CONDA_EXE")/condabin${PATH:+":${PATH}"}";     else         PATH="$(\dirname "$(\dirname "$CONDA_EXE")")/condabin${PATH:+":${PATH}"}";     fi;     \export PATH
+   78      if [ -z "${PS1+x}" ]; then         PS1=;     fi; fi
+   79  pwd
+   80  ls
+   81  cd Fintech-workspace
+   82  ls
+   83  cd Project_Repo
+   84  ls
+   85  cd Starter_Code
+   86  git status
+   87  git add README.md
+   88  git commit -m "added usage and contributors in readme file"
+   89  git status
+   90  cd ..
+   91  git add README.md
+   92  git commit -m "added usage and contributors in readme file"
+   93  git status
+   94  git status
+   95  cd Starter_Code/loan_qualifier_app
+   96  git status
+   97  git add app.py
+   98  git commit -m "update the saving code"
+   99  git push
+  100  rm README.md
+  101  git commit -m "remove readme file from loan qualifier app"
+  102  git push
+  103  git status
+  104  git pull
+  105  cd ..
+  106  cd ..
+  107  ls
+  108  git status
+  109  git commit -m "added email address on readme file"
+  110  git add README.md
+  111  git commit -m "added email address on readme file"
+  112  git push
+  113  cd Starter_Code/loan_qualifier_app
+  114  ls
+  115  git add app.py
+  116  git commit -m "corrected the fire"
+  117  git push
+  118  git status
+  119  rm -r README.md
+  120  rm README.md
+  121  cd ..
+  122  cd ..
+  123  cd ..
+  124  history 50 > terminal_history.txt
+  125  cd Project_repo
+  126  history 50 > terminal_history.txt
