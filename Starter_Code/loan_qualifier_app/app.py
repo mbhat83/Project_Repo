@@ -7,11 +7,12 @@ Example:
     $ python app.py
 """
 import sys
-import fire
+import Fire
 import questionary
 from pathlib import Path
+import csv
 
-from qualifier.utils.fileio import load_csv
+from qualifier.utils.fileio import load_csv , save_csv
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -30,6 +31,7 @@ def load_bank_data():
     Returns:
         The bank data from the data rate sheet CSV file.
     """
+
 
     csvpath = questionary.text("Enter a file path to a rate-sheet (.csv):").ask()
     csvpath = Path(csvpath)
@@ -109,7 +111,14 @@ def save_qualifying_loans(qualifying_loans):
         qualifying_loans (list of lists): The qualifying bank loans.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
+    if not qualifying_loans:
+        sys.exit("Sorry, there are no qualifying loans.")
+
+    save_qualifying_loans = questionary.confirm("Do you want to save you qualifying loan list?").ask()
+    if save_qualifying_loans:
+        csvpath = questionary.text("Save file by typing this Path: data/qualifying_loans.csv").ask()
+        header = ["Lender", "max loan", "max LTV", "Max DTI", "Min Credit", "Interest Rate"]
+        save_csv(Path(csvpath), qualifying_loans, header=header)
 
 
 def run():
