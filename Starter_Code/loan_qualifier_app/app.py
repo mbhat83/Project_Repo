@@ -7,7 +7,7 @@ Example:
     $ python app.py
 """
 import sys
-import Fire
+import fire
 import questionary
 from pathlib import Path
 import csv
