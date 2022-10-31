@@ -49,8 +49,8 @@ utils - sub folders where the utility functions and financial functions (debt ra
 ---
 
 ## Contributors
-Madhuri 
-Google search
+Madhuri madhuri.k.k@gmail.com
+Google search - git repo James-KAY1
 Canvas 
 
 
