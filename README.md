@@ -36,14 +36,26 @@ Before running the application first install the following dependencies.
 
 This section should include screenshots, code blocks, or animations explaining how to use your project.
 
+data Folder:
+
+Contains the Bank loan list - >"daily_rate_sheet.csv" and where the new qualifying_loans.csv file will be saved.
+
+qualifer Folder:
+
+filters - sub folder where the filtering functions (filters for bank loans) are saved for usage in the main **app.py** file.
+
+utils - sub folders where the utility functions and financial functions (debt ratio, loan to value ratio etc) are saved for usage in the main **app.py** file
+
 ---
 
 ## Contributors
+Madhuri 
+Google search
+Canvas 
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+Canvas
