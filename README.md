@@ -11,9 +11,10 @@ Describe the technologies required to use your project such as programming langu
 
 The project uses programming languages **Python**
 
-[fire](https://github.com/google/python-fire) 
-
-[questionary](https://github.com/tmbo/questionary) 
+```python
+  pip install fire
+  pip install questionary
+```
 
 ![libraries requirement](https://github.com/mbhat83/Project_Repo/blob/main/Capture.PNG)
 
@@ -24,10 +25,10 @@ The project uses programming languages **Python**
 In this section, you should include detailed installation notes containing code blocks and screenshots.
 Before running the application first install the following dependencies.
 
-```python
-  pip install fire
-  pip install questionary
-```
+
+[fire](https://github.com/google/python-fire) 
+
+[questionary](https://github.com/tmbo/questionary) 
 
 ---
 
